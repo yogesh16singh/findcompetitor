@@ -9,7 +9,7 @@ export default function App() {
   const fetchCompetitors = async () => {
     setLoading(true);
     setResults(null);
-    const res = await fetch('http://localhost:5000/api/competitors', {
+    const res = await fetch('https://findcompetitor.onrender.com/api/competitors', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ brand })
